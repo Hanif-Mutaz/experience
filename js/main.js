@@ -79,15 +79,19 @@
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'masonry',  // Mengubah dari 'fitRows' ke 'masonry'
+        masonry: {
+            columnWidth: '.portfolio-item',
+            horizontalOrder: true  // Mengatur urutan horizontal
+        }
     });
+
     $('#portfolio-flters li').on('click', function () {
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    
     // Certificate isotope and filter
     // var certificateIsotope = $('.certificate-container').isotope({
     //     itemSelector: '.certificate-item',

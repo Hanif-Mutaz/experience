@@ -374,15 +374,22 @@
                 <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                <div class="col-12 text-center mb-4">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".web">Web</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".spreadsheet">Spreadsheet</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".api">API</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <!-- Item Portfolio 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item web">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/Sistem Input Insentif PAT.png" alt="">
                         <div class="bg-primary d-flex align-items-center justify-content-center">
                             <a href="img/Sistem Input Insentif PAT.png" data-lightbox="portfolio1">
-                            <a href="img/tampilan admin dekstop.png" data-lightbox="portfolio1">
-                            <a href="img/tampilan admin dekstop2.png" data-lightbox="portfolio1">
-                            <a href="img/tampilan guru dekstop 1.png" data-lightbox="portfolio1">
-                            <a href="img/tampilan guru dekstop 2.png" data-lightbox="portfolio1">
                                 <i class="fa fa-eye text-white" style="font-size: 60px;"></i>
                             </a>
                         </div>
@@ -390,18 +397,27 @@
                     <h5 class="font-weight-medium mb-4">Aplikasi Sistem Input Insentif PAT Berbasis Website </h5>
                     <a class="btn btn-sm btn-outline-primary py-2" href="https://github.com/hanifmutaz/Sistem_input_PAT">Read More</a>
                 </div>
-                <!-- <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
+                
+                <!-- Item Portfolio 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item spreadsheet">
+                    <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/RPP.jpg" alt="">
+                        <div class="bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/RPP.jpg" data-lightbox="portfolio2">
+                                <i class="fa fa-eye text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
                     </div>
                     <h5 class="font-weight-medium mb-4">Rencana Pelaksanaan Pembelajaran dengan menggunakan rumus VLOOKUP</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="https://docs.google.com/spreadsheets/d/16TmwXKeyaZKSuYAZ8puCRITBVvYfddob/edit#gid=950231280" target="_blank"">Read More</a>
-                </div> -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://docs.google.com/spreadsheets/d/16TmwXKeyaZKSuYAZ8puCRITBVvYfddob/edit#gid=950231280" target="_blank">Read More</a>
+                </div>
+                
+                <!-- Item Portfolio 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item api">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/bookshelf.png" alt="">
                         <div class="bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/bookshelf.png" data-lightbox="portfolio">
+                            <a href="img/bookshelf.png" data-lightbox="portfolio3">
                                 <i class="fa fa-eye text-white" style="font-size: 60px;"></i>
                             </a>
                         </div>
@@ -409,17 +425,6 @@
                     <h5 class="font-weight-medium mb-4">Bookshelf</h5>
                     <a class="btn btn-sm btn-outline-primary py-2" href="https://github.com/hanifmutaz/BookShelfAPI">Read More</a>
                 </div>
-                <!-- <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div> -->
             </div>
         </div>
     </div>
